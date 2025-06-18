@@ -18,3 +18,5 @@ def get_primo(n_min, n_max):
 entrada = input().split()
 print(get_primo(int(entrada[0]), int(entrada[1])))
 
+#Nota: tem como melhorar sim, utilizando o algoritmo Crivo de Eratóstenes. Ele é mais rápido, mas a sintaxe é bem mais complexa. Não conseguiria implementar na olimpíada nem ferrando, pensando que existem outros exercícios.
+
