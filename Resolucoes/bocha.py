@@ -1,21 +1,18 @@
-
+# Entrada das distâncias
 a = float(input())
 b = float(input())
 c = float(input())
 
-
 maior = max(a, b, c)
 
+quantos_empataram = [a, b, c].count(maior)
 
-quantidade_maior = (a == maior) + (b == maior) + (c == maior)
-
-
-if quantidade_maior > 1:
+if quantos_empataram > 1:
     print("Empatou")
 else:
-    if a == maior:
+    if maior == a:
         print("Equipe A ganhou")
-    elif b == maior:
+    elif maior == b:
         print("Equipe B ganhou")
     else:
         print("Equipe C ganhou")
